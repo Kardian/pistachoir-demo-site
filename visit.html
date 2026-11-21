@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visit and reserve · Pistachoir Gelato</title>
+<meta name="description" content="Address, opening hours and the tub reservation form for Pistachoir.">
+<meta name="theme-color" content="#1b2db8">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link rel="stylesheet" href="wireframe.css">
+
+</head>
+<body class="p-visit">
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+<a class="logo" href="index.html" aria-label="Pistachoir Gelato, home"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="24" r="12" fill="currentColor"/><path d="M11 9q2-4 5 0M18 6q2-4 5 0M25 9q2-4 5 0" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><span>Pistachoir</span></a>
+<nav aria-label="Main"><ul class="nav"><li><a href="flavours.html">Flavours</a></li><li><a href="story.html">Our story</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="visit.html" aria-current="page">Visit</a></li></ul></nav>
+<a class="btn btn-sm" href="visit.html#reserve">Reserve a tub</a>
+</header>
+<main id="main">
+<section class="phead">
+<h1 class="mega" aria-label="9 Larkin Street."><span class="ln"><span class="w" style="--i:0">9 Larkin</span></span><span class="ln"><span class="w" style="--i:1">Street.</span></span></h1>
+<p class="phead-copy reveal">Port Ellery. On the corner with Quay Road, one block up from the harbour. Look for the blue.</p>
+</section>
+<section class="visit-grid">
+<div class="visit-info reveal">
+<svg class="map" viewBox="0 0 400 300" role="img" aria-label="Sketch map: Pistachoir is on the corner of Larkin Street and Quay Road, one block from the harbour"><rect width="400" height="300" fill="currentColor" opacity=".0"/><path d="M0 210 L400 170" class="road big"/><path d="M150 0 L190 300" class="road"/><path d="M0 90 L400 60" class="road"/><path d="M300 0 L330 300" class="road"/><path d="M0 260 Q200 230 400 250 L400 300 L0 300Z" class="sea"/><circle cx="172" cy="196" r="14" class="pin"/><circle cx="172" cy="196" r="5" class="pin-in"/></svg>
+<dl class="hours"><dt>Wednesday–Sunday</dt><dd>12:00–22:00</dd><dt>Monday–Tuesday</dt><dd>Closed (we churn for the week)</dd></dl>
+<p><a href="tel:+15550174413">(555) 017-4413</a><br><a href="mailto:hello@pistachoir.example">hello@pistachoir.example</a></p>
+</div>
+<form id="reserve" class="form reveal" action="mailto:hello@pistachoir.example" method="post" enctype="text/plain">
+<h2 class="big">Reserve a tub.</h2>
+<p class="form-status" role="status" aria-live="polite"></p>
+<p class="form-note">Order by 12:00, collect from 17:00 the same day. 500 ml, two flavours, $14, pay at the counter. This demo form opens your email app with the order filled in; nothing is stored on a server.</p>
+<div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<div class="two">
+<div class="field"><label for="f1">Flavour one</label><select id="f1" name="flavour_one"><option>Pistachio</option><option>Lemon &amp; thyme</option><option>Black fig</option><option>Dark chocolate</option><option>Raspberry</option><option>Fior di latte</option><option>Hazelnut</option><option>Stracciatella</option><option>Espresso</option><option>Blood orange</option><option>Salted caramel</option><option>Ricotta &amp; honey</option></select></div>
+<div class="field"><label for="f2">Flavour two</label><select id="f2" name="flavour_two"><option>Lemon &amp; thyme</option><option>Black fig</option><option>Dark chocolate</option><option>Raspberry</option><option>Fior di latte</option><option>Hazelnut</option><option>Stracciatella</option><option>Espresso</option><option>Blood orange</option><option>Salted caramel</option><option>Ricotta &amp; honey</option><option>Pistachio</option></select></div>
+</div>
+<div class="field"><label for="day">Pickup day</label><select id="day" name="day"><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option></select></div>
+<button class="btn" type="submit">Send reservation</button>
+</form>
+</section>
+</main>
+<footer class="ftr">
+<p class="ftr-big" aria-hidden="true">Pistachoir</p>
+<div class="ftr-grid">
+<div><h2 class="ftr-h">Find us</h2><p>9 Larkin Street<br>Port Ellery</p></div>
+<div><h2 class="ftr-h">Open</h2><p>Wed–Sun<br>12:00–22:00</p></div>
+<div><h2 class="ftr-h">Say hi</h2><p><a href="tel:+15550174413">(555) 017-4413</a><br><a href="mailto:hello@pistachoir.example">hello@pistachoir.example</a></p></div>
+</div>
+<p class="fine">Pistachoir is a fictional gelato shop. This is a demo website: the address, phone and email are not real.</p>
+</footer>
+</body>
+</html>
