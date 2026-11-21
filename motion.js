@@ -39,12 +39,12 @@
     const follow = document.querySelector(".follow");
     if (follow && matchMedia("(hover: hover)").matches) {
       let fx = 0, fy = 0, tx = 0, ty = 0, raf = 0;
-      const loop = () => { fx += (tx - fx) * 0.18; fy += (ty - fy) * 0.18; follow.style.transform = `translate(${fx - 150}px, ${fy - 112}px)`; raf = requestAnimationFrame(loop); };
+      const loop = () => { fx += (tx - fx) * 0.18; fy += (ty - fy) * 0.18; follow.style.transform = `translate(${fx}px, ${fy - 112}px)`; raf = requestAnimationFrame(loop); };
       document.querySelectorAll(".voices li").forEach(li => {
         li.addEventListener("mouseenter", () => { follow.src = li.dataset.img; follow.classList.add("on"); if (!raf) raf = requestAnimationFrame(loop); });
         li.addEventListener("mouseleave", () => follow.classList.remove("on"));
       });
-      addEventListener("mousemove", (e) => { tx = e.clientX + 40; ty = e.clientY; });
+      addEventListener("mousemove", (e) => { tx = e.clientX + 32; ty = e.clientY; });
     }
 
     // 4. scroll-driven layer: parallax, marquee velocity, ghost type, clip-word fill, badge, header, sticky zoom, sideways gallery
