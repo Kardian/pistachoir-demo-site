@@ -284,5 +284,5 @@ input,select{font:inherit;color:var(--ink);background:var(--white);border:2px so
 .h-track{align-self:flex-start}
 .h-bar{align-self:stretch;margin-inline:var(--gut);height:4px;background:rgba(238,242,255,.25);border-radius:4px;overflow:hidden}
 .h-bar span{display:block;height:100%;width:100%;background:var(--pist);transform-origin:left;transform:scaleX(var(--hp,0))}
-@media (min-width:900px){.h-tall{width:min(28vw,400px)} .h-wide{width:min(52vw,760px)} .h-sq{width:min(32vw,440px)} .h-land{width:min(40vw,580px)}}
+@media (min-width:900px){.h-tall{width:min(30vw,52vh)} .h-wide{width:min(62vw,128vh)} .h-sq{width:min(38vw,62vh)} .h-land{width:min(50vw,78vh)}.h-item:nth-child(odd){margin-top:-8vh}.h-item:nth-child(even){margin-top:10vh}}
 @media (max-width:899px){.p-gal .phead{padding-bottom:0}.h-item:nth-child(odd){margin-top:-6vh}.h-item:nth-child(even){margin-top:8vh}}
